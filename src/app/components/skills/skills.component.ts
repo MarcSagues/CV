@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 isolate">
         <!-- Iterate through simplified categories -->
         <div *ngFor="let category of filteredCategories" 
-             class="glass-card hover-card p-6 min-w-[280px] relative transition-all duration-300 hover:z-10 hover:scale-[1.03] cursor-default bg-white dark:bg-slate-900 shadow-2xl dark:shadow-black">
+             class="glass-card hover-card p-6 min-w-[280px] relative transition-all duration-300 hover:z-10 hover:scale-[1.03] cursor-default bg-white dark:bg-zinc-900 shadow-2xl dark:shadow-black">
           <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
             <span class="w-2 h-2 rounded-full" [ngClass]="category.color"></span>
             {{category.name}}
@@ -33,21 +33,21 @@ import { CommonModule } from '@angular/common';
         </div>
 
         <!-- Languages Card -->
-        <div class="glass-card hover-card p-6 min-w-[280px] relative transition-all duration-300 hover:z-10 hover:scale-[1.03] cursor-default bg-white dark:bg-slate-900 shadow-2xl dark:shadow-black">
+        <div class="glass-card hover-card p-6 min-w-[280px] relative transition-all duration-300 hover:z-10 hover:scale-[1.03] cursor-default bg-white dark:bg-zinc-900 shadow-2xl dark:shadow-black">
           <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-green-500"></span>
             Languages
           </h3>
           <div class="space-y-4">
-            <div class="flex justify-between items-center bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md hover:border-green-200 dark:hover:border-green-900 group">
+            <div class="flex justify-between items-center bg-slate-50 dark:bg-zinc-800/50 p-3 rounded-lg border border-slate-100 dark:border-zinc-700 transition-all duration-300 hover:bg-white dark:hover:bg-zinc-800 hover:shadow-md hover:border-green-200 dark:hover:border-green-900 group">
               <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Spanish</span>
               <span class="text-xs font-bold text-green-600 dark:text-green-400 px-2 py-1 bg-green-50 dark:bg-green-900/30 rounded-full group-hover:bg-green-100 dark:group-hover:bg-green-900/50 transition-colors">Native</span>
             </div>
-            <div class="flex justify-between items-center bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md hover:border-green-200 dark:hover:border-green-900 group">
+            <div class="flex justify-between items-center bg-slate-50 dark:bg-zinc-800/50 p-3 rounded-lg border border-slate-100 dark:border-zinc-700 transition-all duration-300 hover:bg-white dark:hover:bg-zinc-800 hover:shadow-md hover:border-green-200 dark:hover:border-green-900 group">
               <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Catalan</span>
               <span class="text-xs font-bold text-green-600 dark:text-green-400 px-2 py-1 bg-green-50 dark:bg-green-900/30 rounded-full group-hover:bg-green-100 dark:group-hover:bg-green-900/50 transition-colors">Native</span>
             </div>
-            <div class="flex justify-between items-center bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md hover:border-primary-200 dark:hover:border-primary-900 group">
+            <div class="flex justify-between items-center bg-slate-50 dark:bg-zinc-800/50 p-3 rounded-lg border border-slate-100 dark:border-zinc-700 transition-all duration-300 hover:bg-white dark:hover:bg-zinc-800 hover:shadow-md hover:border-primary-200 dark:hover:border-primary-900 group">
               <span class="text-sm font-medium text-slate-700 dark:text-slate-300">English</span>
               <span class="text-xs font-bold text-primary-600 dark:text-primary-400 px-2 py-1 bg-primary-50 dark:bg-primary-900/30 rounded-full group-hover:bg-primary-100 dark:group-hover:bg-primary-900/50 transition-colors">Upper-Int</span>
             </div>

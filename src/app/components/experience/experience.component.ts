@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
           <!-- Timeline dot -->
           <div class="absolute left-[-5px] top-2 w-2.5 h-2.5 rounded-full bg-primary-500 border-4 border-white dark:border-slate-900 shadow-sm transition-transform duration-300 group-hover:scale-125"></div>
           
-          <div class="glass-card hover-card p-6 dark:bg-slate-900/80 dark:border-slate-700/50">
+          <div class="glass-card hover-card p-6 dark:bg-zinc-900/80 dark:border-zinc-700/50">
             <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
               <div>
                 <h3 class="text-xl font-bold text-slate-900 dark:text-white">{{exp.role}}</h3>
