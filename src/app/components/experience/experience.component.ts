@@ -46,11 +46,18 @@ import { CommonModule } from '@angular/common';
 export class ExperienceComponent {
   experiences = [
     {
-      role: 'Frontend Web Developer',
+      role: 'Senior Software Engineer',
+      company: 'Indra Group · Barcelona',
+      period: 'Jul 2026 – Present',
+      description: 'Developing scalable web applications for cybersecurity and cyberdefense platforms. Contributing to frontend architecture, technical decisions and reusable component design, improving maintainability, performance and developer experience while balancing delivery speed, scalability and technical debt.',
+      tags: ['Cybersecurity', 'Frontend Architecture', 'Angular', 'TypeScript', 'Design Systems', 'Technical Leadership']
+    },
+    {
+      role: 'Software Engineer',
       company: 'Circontrol S.A. · Viladecavalls',
-      period: 'Mar 2023 – Present',
-      description: 'Led full Angular migration from v12 to v20, modernising architecture. Designed and maintained an internal npm component library (PrimeNG + Angular Material). Built web applications from scratch, integrated Tailwind CSS v4, and collaborated with UX/UI via Figma for pixel-perfect implementation.',
-      tags: ['Angular v20', 'PrimeNG', 'Material', 'Tailwind v4', 'Figma', 'Architecture']
+      period: 'Mar 2023 – Jul 2026',
+      description: 'Led full Angular migration from v12 to v20, modernising architecture. Designed, developed and published a shared Angular NPM package with reusable components and styles for multiple company web applications. Built complex frontend features with TailwindCSS and PrimeNG across three customised themes, collaborating with UX/UI via Figma for pixel-perfect implementation.',
+      tags: ['Angular v12→v20', 'NPM Library', 'PrimeNG', 'Tailwind CSS', 'Figma', 'Architecture']
     },
     {
       role: 'Full Stack Lead Developer',

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
@@ -21,7 +21,17 @@ import { ThemeService } from './services/theme.service';
     EducationComponent
   ],
   template: `
-    <div class="min-h-screen bg-slate-50 dark:bg-black py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+    @if (loading()) {
+      <div class="fixed inset-0 z-50 flex items-center justify-center bg-slate-50 dark:bg-black transition-opacity duration-500"
+           [class.opacity-0]="!loading()" [class.pointer-events-none]="!loading()">
+        <div class="flex flex-col items-center gap-4">
+          <div class="w-14 h-14 border-4 border-primary-200 dark:border-primary-900/40 border-t-primary-500 rounded-full animate-spin"></div>
+          <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 dark:text-slate-600">Loading CV…</p>
+        </div>
+      </div>
+    }
+    <div class="min-h-screen bg-slate-50 dark:bg-black py-12 px-4 sm:px-6 lg:px-8 transition-opacity duration-500"
+         [class.opacity-0]="loading()">
       <div id="cv-content" class="max-w-5xl mx-auto">
         <!-- Main CV Layout -->
         <app-header (onExport)="exportCV()"></app-header>
@@ -62,6 +72,11 @@ import { ThemeService } from './services/theme.service';
 })
 export class AppComponent {
   themeService = inject(ThemeService);
+  loading = signal(true);
+
+  constructor() {
+    setTimeout(() => this.loading.set(false), 900);
+  }
 
   exportCV() {
     const link = document.createElement('a');
