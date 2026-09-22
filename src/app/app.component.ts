@@ -23,10 +23,7 @@ import { ThemeService } from './services/theme.service';
   template: `
     @if (loading()) {
       <div class="fixed inset-0 z-50 flex items-center justify-center bg-slate-50 dark:bg-black">
-        <div class="flex flex-col items-center gap-4">
-          <div class="w-14 h-14 border-4 border-primary-200 dark:border-primary-900/40 border-t-primary-500 rounded-full animate-spin"></div>
-          <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 dark:text-slate-600">Loading CV…</p>
-        </div>
+        <div class="w-14 h-14 border-4 border-primary-200 dark:border-primary-900/40 border-t-primary-500 rounded-full animate-spin"></div>
       </div>
     } @else {
     <div class="min-h-screen bg-slate-50 dark:bg-black py-12 px-4 sm:px-6 lg:px-8">
