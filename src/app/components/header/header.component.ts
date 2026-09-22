@@ -25,7 +25,7 @@ import { ThemeService } from '../../services/theme.service';
         
         <div class="flex-1 text-center md:text-left">
           <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-2">Marc Sagués</h1>
-          <p class="text-xl md:text-2xl font-medium text-primary-600 dark:text-primary-400 mb-4 font-display">Senior Software Engineer · Frontend Architecture</p>
+          <p class="text-xl md:text-2xl font-medium text-primary-600 dark:text-primary-400 mb-4 font-display">Senior Software Engineer · Software Architecture</p>
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto md:mx-0">
             <a href="mailto:marc10sagues@gmail.com" class="flex items-center gap-2 px-3 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-full text-sm border border-transparent hover:border-primary-200 dark:hover:border-primary-800 hover:text-primary-700 dark:hover:text-primary-300 transition-colors">

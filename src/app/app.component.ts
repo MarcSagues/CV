@@ -23,7 +23,7 @@ import { ThemeService } from './services/theme.service';
   template: `
     @if (loading()) {
       <div class="fixed inset-0 z-50 flex items-center justify-center bg-slate-50 dark:bg-black">
-        <div class="w-14 h-14 border-4 border-primary-200 dark:border-primary-900/40 border-t-primary-500 rounded-full animate-spin"></div>
+        <div class="w-14 h-14 border-4 border-primary-200 dark:border-zinc-700 border-t-primary-500 dark:border-t-primary-400 rounded-full animate-spin"></div>
       </div>
     } @else {
     <div class="min-h-screen bg-slate-50 dark:bg-black py-12 px-4 sm:px-6 lg:px-8">

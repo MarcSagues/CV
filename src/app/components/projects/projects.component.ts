@@ -75,6 +75,7 @@ export class ProjectsComponent {
       name: 'DEX',
       description: 'Decentralized exchange project focused on Web3 user experience and fast swaps.',
       url: 'https://dex.msagues.com',
+      image: 'projects/dex-icon.svg',
       technologies: ['React', 'Solidity', 'TypeScript', 'Tailwind', 'Web3', 'Ethers']
     }
   ];
