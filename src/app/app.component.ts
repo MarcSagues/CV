@@ -75,7 +75,11 @@ export class AppComponent {
   loading = signal(true);
 
   constructor() {
-    setTimeout(() => this.loading.set(false), 900);
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      this.loading.set(false);
+      document.body.style.overflow = '';
+    }, 900);
   }
 
   exportCV() {

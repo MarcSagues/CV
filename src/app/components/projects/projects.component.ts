@@ -65,7 +65,7 @@ export class ProjectsComponent {
   projects = [
     {
       name: 'Piqo — Weekly Football Pool App',
-      description: 'Production mobile app (iOS & Android, via Capacitor) for weekly football prediction pools among groups of friends: matchdays, groups, leaderboards, streaks, badges and push notifications. The link below opens the companion website — the actual product is the native app. Built end-to-end: NestJS + Prisma + PostgreSQL backend, Angular + Capacitor frontend.',
+      description: 'Production mobile app (iOS & Android, via Capacitor) for weekly football prediction pools among groups of friends: matchdays, groups, leaderboards, streaks, badges and push notifications.',
       url: 'https://piqo.es',
       image: 'projects/piqo-icon.png',
       technologies: ['Angular', 'Capacitor', 'NestJS', 'Prisma', 'PostgreSQL', 'iOS / Android', 'PWA'],
