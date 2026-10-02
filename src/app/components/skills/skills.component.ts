@@ -116,6 +116,18 @@ export class SkillsComponent {
 
   badges = [
     {
+      name: 'CSS Essentials',
+      issuer: 'Cisco',
+      url: 'https://www.credly.com/badges/f1bd1ce3-046b-4b16-9945-d0a267d9b969',
+      image: 'https://images.credly.com/images/bd2bba36-66ad-4de2-9d91-e29433e51a16/blob'
+    },
+    {
+      name: 'HTML Essentials',
+      issuer: 'Cisco',
+      url: 'https://www.credly.com/badges/146edc6a-0373-4190-8916-0767501fb1b7',
+      image: 'https://images.credly.com/images/b1c17d0c-e76b-45fc-9b28-87b01ae1caf3/blob'
+    },
+    {
       name: 'JavaScript Essentials 1',
       issuer: 'Cisco · OpenEDG JS Institute',
       url: 'https://www.credly.com/badges/0437252c-6b02-429a-9915-f47a92fb8477',
