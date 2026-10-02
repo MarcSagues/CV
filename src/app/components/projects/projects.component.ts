@@ -48,8 +48,8 @@ import { Component } from '@angular/core';
                     [href]="project.downloadUrl"
                     [attr.aria-label]="'Download ' + project.name + ' for Windows'"
                   >
-                    Download for Windows
-                    <span aria-hidden="true">↓</span>
+                    Download
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4.5 10.5 3v8H2V4.5Zm10-1.7L22 1v10H12V2.8ZM2 12.5h8.5v8L2 19v-6.5Zm10 0h10v10l-10-1.8v-8.2Z"/></svg>
                   </a>
                 }
                 <a
