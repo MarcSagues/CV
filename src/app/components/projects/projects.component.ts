@@ -76,14 +76,6 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      name: 'Dungeons Tower',
-      description: 'Cooperative 2.5D dungeon crawler for 1–4 players, with distinct roles, evolving builds and a 100-floor tower. A playable Windows build is available while the game is in development.',
-      url: 'https://rpg.msagues.com',
-      downloadUrl: 'https://github.com/MarcSagues/dungeons-tower-builds/releases/latest/download/DungeonsTower-Setup.exe',
-      image: 'projects/dungeons-tower.jpg',
-      technologies: ['Unity 6', 'C#', 'Netcode for GameObjects', 'Unity Relay', 'Windows']
-    },
-    {
       name: 'Piqo — Weekly Football Pool App',
       description: 'Production mobile app (iOS & Android, via Capacitor) for weekly football prediction pools among groups of friends: matchdays, groups, leaderboards, streaks, badges and push notifications.',
       url: 'https://piqo.es',
@@ -91,6 +83,14 @@ export class ProjectsComponent {
       image: 'projects/piqo-icon.png',
       technologies: ['Angular', 'Capacitor', 'NestJS', 'Prisma', 'PostgreSQL', 'iOS / Android', 'PWA'],
       stores: true
+    },
+    {
+      name: 'Dungeons Tower',
+      description: 'Cooperative 2.5D dungeon crawler for 1–4 players, with distinct roles, evolving builds and a 100-floor tower. A playable Windows build is available while the game is in development.',
+      url: 'https://rpg.msagues.com',
+      downloadUrl: 'https://github.com/MarcSagues/dungeons-tower-builds/releases/latest/download/DungeonsTower-Setup.exe',
+      image: 'projects/dungeons-tower.svg',
+      technologies: ['Unity 6', 'C#', 'Netcode for GameObjects', 'Unity Relay', 'Windows']
     },
     {
       name: 'DEX',
