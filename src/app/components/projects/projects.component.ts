@@ -41,16 +41,28 @@ import { Component } from '@angular/core';
                 </div>
               </div>
 
-              <a
-                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-primary-200 dark:border-primary-800 text-primary-700 dark:text-primary-300 bg-primary-50/70 dark:bg-primary-900/20 hover:bg-primary-100 dark:hover:bg-primary-900/35 hover:border-primary-300 dark:hover:border-primary-700 transition-all duration-200 self-start text-sm font-semibold whitespace-nowrap"
-                [href]="project.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                [attr.aria-label]="'Open project ' + project.name"
-              >
-                Visit
-                <span aria-hidden="true">↗</span>
-              </a>
+              <div class="flex flex-wrap gap-2 self-start">
+                @if (project.downloadUrl) {
+                  <a
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-accent-400 bg-accent-50 dark:bg-accent-900/20 text-slate-900 dark:text-white hover:bg-accent-100 dark:hover:bg-accent-900/35 transition-all duration-200 text-sm font-semibold whitespace-nowrap"
+                    [href]="project.downloadUrl"
+                    [attr.aria-label]="'Download ' + project.name + ' for Windows'"
+                  >
+                    Download for Windows
+                    <span aria-hidden="true">↓</span>
+                  </a>
+                }
+                <a
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-primary-200 dark:border-primary-800 text-primary-700 dark:text-primary-300 bg-primary-50/70 dark:bg-primary-900/20 hover:bg-primary-100 dark:hover:bg-primary-900/35 hover:border-primary-300 dark:hover:border-primary-700 transition-all duration-200 text-sm font-semibold whitespace-nowrap"
+                  [href]="project.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  [attr.aria-label]="'Open project ' + project.name"
+                >
+                  Visit
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
             </div>
           </article>
         }
@@ -63,6 +75,14 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   projects = [
+    {
+      name: 'Dungeons Tower',
+      description: 'Cooperative 2.5D dungeon crawler for 1–4 players, with distinct roles, evolving builds and a 100-floor tower. A playable Windows build is available while the game is in development.',
+      url: 'https://rpg.msagues.com',
+      downloadUrl: 'https://github.com/MarcSagues/dungeons-tower-builds/releases/latest/download/DungeonsTower-Setup.exe',
+      image: 'projects/dungeons-tower.jpg',
+      technologies: ['Unity 6', 'C#', 'Netcode for GameObjects', 'Unity Relay', 'Windows']
+    },
     {
       name: 'Piqo — Weekly Football Pool App',
       description: 'Production mobile app (iOS & Android, via Capacitor) for weekly football prediction pools among groups of friends: matchdays, groups, leaderboards, streaks, badges and push notifications.',
